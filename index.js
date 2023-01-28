@@ -33,14 +33,14 @@ function checkSign(project,username,timestamp,signature){
 function main(proj,user,time,sign){
     if(config.LiteLoader.Command1 !== "null"){
         console.log(time+" | Running command | "+config.LiteLoader.Command1.replaceAll('$user',user))
-        mc.runCmd(config.LiteLoader.Command1.replaceAll('$user',user))
+        mc.runCmdEx(config.LiteLoader.Command1.replaceAll('$user',user))
     }
     if(config.LiteLoader.Command2 !== "null"){
         console.log(time+" | Running command | "+config.LiteLoader.Command2.replaceAll('$user',user))
-        mc.runCmd(config.LiteLoader.Command2.replaceAll('$user',user))
+        mc.runCmdEx(config.LiteLoader.Command2.replaceAll('$user',user))
     }
     if(config.LiteLoader.Command3 !== "null"){
         console.log(time+" | Running command | "+config.LiteLoader.Command3.replaceAll('$user',user))
-        mc.runCmd(config.LiteLoader.Command3.replaceAll('$user',user))
+        mc.runCmdEx(config.LiteLoader.Command3.replaceAll('$user',user))
     }
 }
